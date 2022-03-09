@@ -1,0 +1,21 @@
+* {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    width: 50%;
+    margin: auto;
+    size: 10;
+}
+  
+img{
+     width: 300px;
+     padding: 5px;
+     margin: 5px;
+     display: inline-block;
+}

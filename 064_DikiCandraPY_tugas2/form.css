@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .content {
+    font-family: 'Roboto', Arial, sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+    margin: auto; 
+  }
+
+  .judul {
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .isi {
+    margin-top: 5px;
+  }
+
+  .isi #alamat{
+      height: 45px;
+  }
+
+  .isi #prodi{
+      height: 40px;
+  }
+
+  .baris:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input[type=text], select, textarea {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 5px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    outline-color: #036fd4;  
+  }
+
+  input .alamat {
+    height: 45px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  button {
+    background-color: #036fd4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    height: 13px;
+    width: 13px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark::after {
+    display: block;
+  }
+
+  .container .checkmark::after {
+ 	top: 4px;
+	left: 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+  }
+  
